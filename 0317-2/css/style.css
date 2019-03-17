@@ -1,0 +1,66 @@
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+html,body{
+	font-family: '微軟正黑體';	
+}
+
+/* Layout */
+.container{
+	border: 1px solid #ddd;
+	width: 996px;
+	height: 100%;
+
+	padding-left: 16px;
+	padding-right: 16px;
+
+	margin: 0 auto;
+	/* 置中 */
+}
+
+.section-container{
+	border: 1px solid #000;
+	padding-top: 80px;
+	padding-bottom: 80px
+}
+
+.row{
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+.row:after{
+	content: '';
+	display: block;
+	clear: both;
+
+	height: 0;
+	visibility: hidden;
+}
+
+.col-1-2{
+	width: 50%;
+	float: left;
+}
+
+/* Component */
+.navbar{
+	height: 64px;
+	background-color: #fff;
+}
+
+
+
+.component-1{
+	height: 640px;
+	background-color: #e8d3ff;
+}
+
+.component-2{
+	margin-bottom: 80px;
+}
+.component-3{
+	height: 400px;
+	background-color: #a6e3e9;
+}
