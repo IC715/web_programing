@@ -1,0 +1,106 @@
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+html,body{
+	font-family: '微軟正黑體';	
+}
+
+h3,p{
+	margin: 0;
+	padding: 0;
+}
+
+.image-container{
+	width: 400px;
+	height: 300px;
+	border: 1px solid #000;
+	overflow: hidden;
+}
+.image-container img{
+	display: block;
+	width: 100%;
+}
+.bg-image{
+	width: 400px;
+	height: 300px;
+	border: 1px solid #000;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.bg-image2{
+	width: 400px;
+	height: 300px;
+	border: 1px solid #000;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.logo1{
+	/*border: 1px solid #000;*/
+
+	/*usually use together*/
+	display: inline-block;
+	vertical-align: top;
+}
+.logo1 img{
+	display: block;
+	width: 100%;
+}
+.logo2{
+	/*border: 1px solid #000;*/
+	display: inline-block;
+	vertical-align: top;
+	width: 120px;
+	height: 48px;
+	background-image: url('../images/logo.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	/*0% start from left*/
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.outter{
+	width: 600px;
+	border: 1px solid #000;
+}
+.outter .image{
+	width: 100%;
+	padding-top: 75%;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.img-container{
+	width: 100%;
+}
+
+.img-container:before{
+	content: '';
+	width: 100%;
+	padding-top: 75%;
+
+	display: block;
+}
+.img-ratio-2-3:before{
+	padding-top: 150%;
+}
+
+.img-container .img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
