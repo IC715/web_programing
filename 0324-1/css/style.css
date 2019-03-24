@@ -1,0 +1,67 @@
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+
+html,body{
+	font-family: '微軟正黑體';	
+}
+
+.outter{
+	border: 1px solid #000;
+	height: 300px;
+}
+
+.box{
+	background-color: #ffe6eb;
+	width: 200px;
+	height: 200px;
+}
+
+/* margin:0 auto */
+.box1{
+	margin:0 auto;
+	/*display: flex;*/
+	/*deafult is block*/
+}
+
+/* inline */
+.outter2{
+	text-align: center;
+}
+.box2{
+	display: inline-block;
+}
+
+/* flex */
+.outter3{
+	display: flex;
+	justify-content: center;
+}
+.outter4{
+	display: flex;
+	align-items: center;
+}
+.outter5{
+	display: flex;
+}
+.box5{
+	margin: auto;
+}
+
+/* position:absolute 置中 */
+.outtrt6{
+	position: relative;
+}
+.box6{
+	position: absolute;
+	top: 50%;
+	/*left: 50%;*/
+	transform: translate(0%,-50%);
+}
+
+/*文字置中*/
+.box7{
+	text-align: center;
+	line-height: 200px;
+}
