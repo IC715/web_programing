@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本動畫</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="boxs">
+        <div class="box box1" id="box1">
+
+        </div>
+        <div class="box box2" id="box2">
+
+        </div>
+        <div class="box box3" id="box3">
+
+        </div>
+        <div class="box box4" id="box4">
+
+        </div>
+        <div class="box box5" id="box5">
+
+        </div>       
+    </div>
+    <script 
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        // var boxOne = document.getElementById("box1");
+        // var boxTwo = document.getElementById("box2");
+        // var boxThr = document.getElementById("box3");
+        // var boxFou = document.getElementById("box4");
+        // var boxFiv = document.getElementById("box5");
+
+        console.log($("box1"));
+        
+        $("#box1").css("background-color","yellow");
+        $("#box1").click((e)=>{
+            $("#box1").hide();
+        });
+        var boxArray = document.getElementsByClassName("box");
+        //console.log(boxArray);
+        for(var i=0; i<boxArray.length; i++){
+            boxArray[i].addEventListener('mouseover', (e) => {
+
+                console.log("mouse");
+                for(var j=0; j<boxArray.length; j++){
+                    boxArray[j].classList.remove('animated');
+                }
+                e.target.classList.add('animated');
+            });
+        }
+        // boxOne.addEventListener('click', (e) => {
+        //     e.target.classList.add('animated');
+        //     console.log(e.target.classList);
+        // });
+        // boxTwo.addEventListener('click', (e) => {
+        //     e.target.classList.add('animated');
+        //     console.log(e.target.classList);
+        // });
+        // boxThr.addEventListener('click', (e) => {
+        //     e.target.classList.add('animated');
+        //     console.log(e.target.classList);
+        // });
+        // boxFou.addEventListener('click', (e) => {
+        //     e.target.classList.add('animated');
+        //     console.log(e.target.classList);
+        // });
+        // boxFiv.addEventListener('click', (e) => {
+        //     e.target.classList.add('animated');
+        //     console.log(e.target.classList);
+        // });
+    </script>
+</body>
+</html>
